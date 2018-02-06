@@ -8,6 +8,15 @@ public class Student {
 	private String email;
 	private Date dob;
 	
+	
+	
+	public Student(int studid, String name, String email, Date dob) {
+		super();
+		this.studid = studid;
+		this.name = name;
+		this.email = email;
+		this.dob = dob;
+	}
 	public int getStudid() {
 		return studid;
 	}
