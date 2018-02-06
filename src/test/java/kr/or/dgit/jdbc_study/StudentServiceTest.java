@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
+import org.apache.logging.log4j.core.util.Assert;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,7 +27,7 @@ public class StudentServiceTest {
 	@Test
 	public void test() {
 		List<Student> list = service.findAllStudents();
-		fail("Not yet implemented");
+		Assert.isNonEmpty(list);
 	}
 
 }
